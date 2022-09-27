@@ -1,0 +1,156 @@
+body{
+    font-family: 'Outfit',
+    sans-serif;
+    background-image: 
+    url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh ;
+
+    
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.cabecalho{
+
+    color:white;
+}
+
+.cabecalho .pokebola{
+    width: 25px;
+    height: 25px;
+}
+
+.pokemon-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+    
+}
+
+.pokemon-slider .poochyena {
+
+    width: 250px;
+    height: 250px;
+}
+
+.lista-pokemons {
+    
+    width: 310px;
+    height: 510px;
+    position: relative;
+}
+
+.btn-seta{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: backgraund-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+
+}
+
+.btn-seta:hover {
+    background-color: #8351FE;
+}
+
+.cartao {
+    opacity: 0;
+    background-color:  blueviolet;
+    height: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1{
+    background: url(../imagens/mimikyu-hd-iphone-12-pro-max.jpg)
+    no-repeat;
+}
+.fundo-2{
+    background: url(../imagens/fundo-card-1.jpg)
+    no-repeat;
+}
+
+.fundo-3{
+    background: url(../imagens/fundo-card-2.jpg)
+    no-repeat;
+}
+
+.cartao .informacao{
+    background-color:rgba(100, 100, 111, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+}
+
+.cartao .informacao .nome{
+    color: white;
+    font-size: 22px;
+}
+
+.cartao .informacao .vida{
+    background-color: #333;
+    color: aliceblue;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.cartao .conteiner-imagem{
+    text-align: center;
+}
+
+.cartao .imagem-pokemon{
+    max-width: 100%;
+    max-height: 280px;
+    padding: 20px;
+}
+
+.cartao .discricao {
+    background-color:rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+}
+
+.cartao .discricao .titulo{
+
+    background-color: #333;
+    color:whitesmoke ;
+    font-size: 15px;
+    padding: 12px;
+}
+.cartao .discricao .texto{
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}

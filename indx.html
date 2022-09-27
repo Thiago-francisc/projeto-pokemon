@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto pokemon </title> 
+    
+    <link rel="shortcut icon" href="src/imagens/pokebola.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="src/css/reset.css">
+
+<link rel="stylesheet" href="src/css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/pokebola.png" alt="pokebola" class="pokebola"/>
+        <h1 class="titulo">Mapa Dev Week</h1>
+    </header>
+    <main class="pokemon-slider">
+        <button class="btn-seta btn-voltar"  id="btn-voltar">
+            <img src="src/imagens/seta.png" alt="seta voltar"  >
+        </button>
+        <ul class="lista-pokemons">
+            <li class="cartao selecionado fundo-1">
+                <div class="informacao">
+                    <h2 class="nome">Poochyena</h2>
+                    <p class="vida">HP 300</p>
+                </div>
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/261Poochyena.png" alt="poochyena"class="poochyena" class="imagem-pokemon" >
+                </div>
+                <div class="discricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pokemon tipo dark da terceira geração , muito comun em toda região.À primeira vista, Poochyena morde qualquer coisa que se mova. Notável por sua natureza tenaz, que persegue a presa até que a vítima se esgota.  </p>
+                </div>
+            </li>
+            <li class="cartao  fundo-2">
+                <div class="informacao">
+                    <h2 class="nome">Picachu</h2>
+                    <p class="vida">HP 350</p>
+                </div>
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/pikachu.png" alt="picachu" class="imagem-pokemon" >
+                </div>
+                <div class="discricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pokemon tipo eletrico da primeira geração , pokemon mascote da franquia.Ele é a forma evoluida de Pichu quando chega num certo ponto de amizade com o treinador e evolui para Raichu quando esta segurando uma Thunder Stone.  </p>
+                </div>
+            </li>
+            <li class="cartao fundo-3">
+                <div class="informacao">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="vida">HP 450</p>
+                </div>
+                <div class="conteiner-imagem">
+                    <img src="src/imagens/charizard.png" alt="charizard" class="imagem-pokemon" >
+                </div>
+                <div class="discricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pokemon tipo fogo da primeira geração , um dos pokemons iniciais de kanto.é um Pokémon do tipo Fogo e Voador.Ele é a forma evoluída de Charmeleon quando chega no nível 36. Ele tambem é a forma final de Charmander.  </p>
+                </div>
+            </li>
+           
+
+        </ul>
+        <button class="btn-seta" id="btn-avancar">
+            <img src="src/imagens/seta.png" alt="seta avançar" >
+        </button>
+         <script src="src/js/indx.js"></script>
+    </main>
+
+</body>
